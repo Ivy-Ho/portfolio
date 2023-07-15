@@ -13,7 +13,7 @@ const Avatar = (props) => {
 
   const group = useRef();
 
-  const { nodes, materials } = useGLTF('/models/648201acc2079c6b56bdb977.glb')
+  const { nodes, materials } = useGLTF('models/648201acc2079c6b56bdb977.glb')
 
   const { animations: floatingAnimation } = useFBX("animation/Floating.fbx")
 
@@ -79,6 +79,6 @@ const AvatarCanvas = () => {
   )
 }
 
-useGLTF.preload('/models/648201acc2079c6b56bdb977.glb')
+useGLTF.preload('models/648201acc2079c6b56bdb977.glb')
 
 export default AvatarCanvas

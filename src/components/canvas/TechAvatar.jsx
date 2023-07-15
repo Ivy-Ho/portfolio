@@ -15,7 +15,7 @@ const TechAvatar = ({ isMobile }) => {
 
   const group = useRef();
 
-  const { nodes, materials } = useGLTF('/models/64ae7cdfdbec0e3029da2609.glb')
+  const { nodes, materials } = useGLTF('models/64ae7cdfdbec0e3029da2609.glb')
 
   const { animations: StandingAnimation } = useFBX("animation/Standing_Idle.fbx")
 
@@ -110,6 +110,6 @@ const [isMobile, setIsMobile ] = useState(false);
   )
 }
 
-useGLTF.preload('/models/64ae7cdfdbec0e3029da2609.glb')
+useGLTF.preload('models/64ae7cdfdbec0e3029da2609.glb')
 
 export default TechAvatarCanvas
