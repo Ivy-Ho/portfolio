@@ -111,5 +111,7 @@ const [isMobile, setIsMobile ] = useState(false);
 }
 
 useGLTF.preload('models/64ae7cdfdbec0e3029da2609.glb')
+useFBX.preload('animation/Standing_Idle.fbx')
+
 
 export default TechAvatarCanvas

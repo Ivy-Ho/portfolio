@@ -80,5 +80,6 @@ const AvatarCanvas = () => {
 }
 
 useGLTF.preload('models/648201acc2079c6b56bdb977.glb')
+useFBX.preload('animation/Floating.fbx')
 
 export default AvatarCanvas
