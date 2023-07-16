@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
 
         {/* logo */}
-        <Link to="/" onClick={()=> {
+        <Link to="/portfolio/" onClick={()=> {
           window.scrollTo(0, 0)
         }}
         >
@@ -30,15 +30,15 @@ const Navbar = () => {
             <li key={link.id} className='text-secondary hover:text-white text-[18px] font-medium cursor-pointer'
             >
               {
-                location.pathname === '/' ? (
+                location.pathname === '/portfolio/' ? (
                   <a href={`#${link.id}`}>
                     {link.title}
                   </a>
                 ) :
                (
-                location.pathname === `/${link.id}` ? (
+                location.pathname === `/portfolio/${link.id}` ? (
                   <Link 
-                    to={`/${link.id}`}
+                    to={`/portfolio/${link.id}`}
                     onClick={()=> {
                       window.scrollTo(0, 0)
                     }}
@@ -46,7 +46,7 @@ const Navbar = () => {
                     {link.title}
                   </Link>
                 ):
-                  <Link to={`/${link.id}`}>
+                  <Link to={`/portfolio/${link.id}`}>
                     {link.title}
                   </Link>
                 )

@@ -15,11 +15,11 @@ const App = () => {
       <Navbar />
       <ScrollToTop />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/project' element={<Project />} />
-        <Route path='/project/:id' element={<ProjectDetail />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/portfolio/' element={<Home />} />
+        <Route path='/portfolio/about' element={<About />} />
+        <Route path='/portfolio/project' element={<Project />} />
+        <Route path='/portfolio/project/:id' element={<ProjectDetail />} />
+        <Route path='/portfolio/contact' element={<Contact />} />
       </Routes>
       <GoTop />
       <Footer />
