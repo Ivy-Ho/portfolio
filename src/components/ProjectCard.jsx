@@ -12,7 +12,7 @@ const ProjectCard = ({ index, id, name, description, tags, image, source_code_li
         transitionSpeed={2500}
         className='bg-tertiary p-5 rounded-2xl sm:w-[340px] w-full h-full group'
       >
-        <Link to={`/project/${id}`}>
+        <Link to={`/portfolio/project/${id}`}>
           <div className='relative w-full h-[230px]'>
             <img
               src={image}
