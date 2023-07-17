@@ -39,7 +39,7 @@ const ProjectDetail = () => {
           />
 
         <div className="max-w-5xl mb-20">
-          <p className="mt-5 max-w-2xl leading-7 text-secondary">
+          <p className="mt-5 max-w-2xl leading-7 text-secondary tracking-wide">
             { data.description }
           </p>
           
