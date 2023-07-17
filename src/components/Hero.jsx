@@ -15,15 +15,15 @@ const Hero = () => {
 
         {/* deco */}
         <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#945eff]' />
-            <div className='w-1 sm:h-80 h-40 violet-gradient' />
+          <div className='w-5 h-5 rounded-full bg-violet-500' />
+            <div className='w-1 sm:h-80 h-40 bg-gradient-to-b from-violet-500 to-transparent ' />
         </div>
 
         {/* header */}
         <div>
           <h1 className={`${styles.heroHeadText}`}>Hi, I'm <span className='text-[#915eff]'>Ivy</span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm a Frontend developer <br className='sm:block hidden' /> based in Taichung, Taiwan.
+            I'm a frontend developer <br className='sm:block hidden' /> based in Taichung, Taiwan.
           </p>
 
           {/* button grouup */}
@@ -45,7 +45,7 @@ const Hero = () => {
                   <img
                     src={link.img}
                     alt={link.name}
-                    className='w-1/2 h-1/2 object-contain hover:opacity-70'
+                    className='w-1/2 h-1/2 object-contain lg:hover:opacity-70'
                   />
                 </div>
               </Link>
@@ -59,9 +59,9 @@ const Hero = () => {
       </div>
 
       {/* scroll down button */}
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href="#about">
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center group'>
+        <a href="#about" className='before:content-["click"] before:block lg:before:hidden before:text-secondary before:font-medium before:mb-1'>
+          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 lg:group-hover:border-white'>
             <motion.div 
               animate={{
                 y: [0, 24, 0]
@@ -71,10 +71,9 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: 'loop'
               }}
-              className="w-3 h-3 rounded-full bg-secondary"
+              className="w-3 h-3 rounded-full bg-secondary lg:group-hover:bg-white"
             />
           </div>
-
         </a>
       </div>
     </section>
