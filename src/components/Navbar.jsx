@@ -15,13 +15,16 @@ const Navbar = () => {
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
 
         {/* logo */}
-        <Link to="/portfolio/" onClick={()=> {
-          window.scrollTo(0, 0)
-        }}
+        <Link  
+          to="/portfolio/" 
+          onClick={()=> {
+            window.scrollTo(0, 0)
+          }}
+          className='text-white text-[18px] font-bold cursor-pointer flex lg:hover:text-violet-500'
         >
-          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-            <span className='text-violet-400'>&lt;&thinsp;</span> ivycodefive <span className='text-violet-400'>&thinsp;&frasl;&gt;</span>
-          </p>
+          <span className='text-violet-500'>&lt;&thinsp;</span>
+          ivycodefive
+          <span className='text-violet-500'>&thinsp;&frasl;&gt;</span>
         </Link>
 
         {/* link */}
@@ -61,22 +64,31 @@ const Navbar = () => {
           onClick={() => setToggle(!toggle)}
           />
           <div className={`${!toggle ? 'hidden' : 'flex' } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
-              <ul className='list-none flex justify-end items-start flex-col gap-4'>
-      {navLinks.map((link) => (
-
+            <ul className='list-none flex justify-end items-start flex-col gap-4'>
+              {navLinks.map((link) => (
                 <li key={link.id} className='text-secondary font-poppins text-[16px] font-medium cursor-pointer'
                 onClick={() => {
                   setToggle(!toggle);
                 }}
                 >
                   {
-                    location.pathname === '/' ? (
+                    location.pathname === '/portfolio/' ? (
                       <a href={`#${link.id}`}>
                         {link.title}
                       </a>
                     ) :
                   (
-                      <Link to={`/${link.id}`}>
+                    location.pathname === `/portfolio/${link.id}` ? (
+                      <Link 
+                        to={`/portfolio/${link.id}`}
+                        onClick={()=> {
+                          window.scrollTo(0, 0)
+                        }}
+                      >
+                        {link.title}
+                      </Link>
+                    ):
+                      <Link to={`/portfolio/${link.id}`}>
                         {link.title}
                       </Link>
                     )
