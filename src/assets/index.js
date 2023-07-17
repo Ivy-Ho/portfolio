@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import github from "./github.png";
 import medium from "./medium.png";
 import linkedin from "./linkedin.png";
@@ -64,7 +63,6 @@ import sunny_3 from "./work/sunny_3.png";
 
 
 export {
-  logo,
   github,
   medium,
   linkedin,
