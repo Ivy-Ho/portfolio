@@ -24,7 +24,7 @@ const About = () => {
         >
           <p className='tracking-wide'>
             <span className='block text-violet-500 text-xl font-medium'>「真的好想做出那個酷東西！」</span>
-            基於對動態網頁製作的熱愛，開始摸索相關技術，希望做出與使用者產生更多互動，也更富趣味性的網站。也期許自己能善用 React, Vue 等技術，製作出更多富有人性化的介面、為使用者帶來便利的網站、應用程式和系統。
+            基於對動態網頁製作的熱愛，開始摸索相關技術，希望做出與使用者產生更多互動，也更富趣味性的網站。更期許自己能善用 React, Vue 等技術，製作出更多富有人性化的介面、為使用者帶來便利的網站、應用程式和系統。
           </p>
           <Link
             to='/portfolio/about'
