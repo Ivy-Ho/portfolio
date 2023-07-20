@@ -89,11 +89,16 @@ const ContactAvatarCanvas = () => {
           />
         </Float>
         <spotLight 
-          position={[-20, 50, 10]}
-          angle={0.12}
+          color="#ba62f9"
+          position={[-20, 20, 8]}
+          angle={Math.PI / 2}
           penumbra={1}
-          intensity={1} />
-        <ambientLight intensity={0.5} />
+          intensity={1.6}
+        />
+        <ambientLight
+          color="#cee6f4"
+          intensity={0.6}
+        />
       </Suspense>
     </Canvas>
   )

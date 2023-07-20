@@ -62,7 +62,7 @@ const Hero = () => {
       </div>
 
       {/* scroll down button */}
-      <div className='absolute xs:bottom-10 bottom-5 w-full flex justify-center items-center group z-20'>
+      <div className='absolute bottom-12 md:bottom-10 w-full flex justify-center items-center group z-20'>
         <a 
           href="#about"
           className='before:content-["click"] before:block lg:before:hidden before:text-white-100 lg:before:text-secondary before:font-medium before:mb-1 block px-3 py-3'

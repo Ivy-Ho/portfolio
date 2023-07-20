@@ -91,11 +91,23 @@ const [isMobile, setIsMobile ] = useState(false);
           isMobile={isMobile}
         />
         <spotLight 
-          position={[-20, 50, 10]}
-          angle={0.12}
+          color="#d17756"
+          position={[-20, 30, 6]}
+          angle={Math.PI / 2}
           penumbra={1}
-          intensity={1} />
-        <ambientLight intensity={0.5} />
+          intensity={1.6}
+        />
+         <spotLight 
+          color="#ba62f9"
+          position={[-4, 7, -5]}
+          angle={Math.PI / 2}
+          penumbra={1}
+          intensity={1}
+        />
+        <ambientLight
+          color="#93bff3"
+          intensity={0.8}
+        />
       </Suspense>
     </Canvas>
   )
