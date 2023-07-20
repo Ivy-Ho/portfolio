@@ -10,7 +10,6 @@ const Home = () => {
         <StarsCanvas />
       </div>
       <About />
-
       <Projects />
       <SideProjects />
       <div className="relative z-0">
