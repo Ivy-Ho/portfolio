@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser'
 import { styles } from '../styles'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
-import AvatarCanvas from './canvas/Avatar';
+import ContactAvatarCanvas from './canvas/ContactAvatar';
 
 const ContactArea = () => {
   
@@ -71,11 +71,14 @@ const ContactArea = () => {
   }
 
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
+    <div className='flex-col-reverse flex gap-10 overflow-hidden xl:mt-12 lg:flex-row'>
       <motion.div
         variants={slideIn('left', "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
+        <span className='hash-span' id="contact">
+          &nbsp;
+        </span>
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
@@ -145,12 +148,76 @@ const ContactArea = () => {
 
       <motion.div
         variants={slideIn('right', "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[250px]'
+        className='lg:flex-1 lg:h-auto md:h-[550px] h-screen relative'
       >
-        <AvatarCanvas />
+        
+        <div className='h-full lg:w-full z-20 relative'>
+
+          {/* text content */}
+          <div className='absolute top-0 w-full items-center z-20 flex justify-center md:justify-start lg:justify-end lg:top-24'>
+            <div className='leading-relaxed text-secondary font-medium'>
+              <p className='text-violet-400 text-lg lg:text-sm lg:font-medium lg:text-secondary lg:tracking-wide flex items-start'>Thank you for visiting my portfolio!
+                <motion.span 
+                  className='hidden lg:inline-block'
+                  animate={{
+                    opacity: [1, 0 , 1]
+                  }}
+                  transition={{
+                    duration: 0.8, 
+                    repeat: Infinity,
+                    repeatType: 'loop',
+                    delay: 2,
+                  }}>
+                    <span className='ml-1 inline-block w-1 h-3 bg-violet-400'></span>
+                  </motion.span>
+              </p>
+              <p className='lg:hidden'>Would you like to leave a message?</p>
+              <p className='lg:hidden'>I'm excited to hear from you </p>
+              <p className='lg:hidden flex'>and  can't wait for your feedback.
+                <motion.div 
+                  className='lg:inline-block lg:hidden'
+                  animate={{
+                    opacity: [1, 0 , 1]
+                  }}
+                  transition={{
+                    duration: 0.8, 
+                    repeat: Infinity,
+                    repeatType: 'loop'
+                  }}>
+                    <span className='ml-1 inline-block w-1 h-3 bg-violet-400'></span>
+                  </motion.div>
+            </p>
+            </div>
+          </div>
+
+          <ContactAvatarCanvas />
+
+          {/* scroll down button */}
+          <div className='absolute md:hidden bottom-16 w-full flex justify-center items-center group z-20'>
+            <a 
+              href="#contact"
+              className='before:content-["click"] before:block lg:before:hidden before:text-white-100 lg:before:text-secondary before:font-medium before:mb-1 block px-3 py-3'
+            >
+              <div className='w-[35px] h-[64px] rounded-3xl border-4 border-white-100  lg:border-secondary flex justify-center items-start p-2 lg:group-hover:border-white'>
+                <motion.div 
+                  animate={{
+                    y: [0, 24, 0]
+                  }}
+                  transition={{
+                    duration: 1.5, 
+                    repeat: Infinity,
+                    repeatType: 'loop'
+                  }}
+                  className="w-3 h-3 rounded-full bg-white-100 lg:bg-secondary lg:group-hover:bg-white"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      
       </motion.div>
     </div>
   )
 }
 
-export default SectionWrapper(ContactArea, "contact")
+export default SectionWrapper(ContactArea, "")
