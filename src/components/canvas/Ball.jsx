@@ -40,9 +40,13 @@ const BallCanvas = ({ icon }) => {
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} />
-        <ambientLight intensity={0.25} />
-        <directionalLight position={[0, 0, 0.05]} />
+        {/* <OrbitControls enableZoom={false} /> */}
+        <ambientLight intensity={0.2} />
+        <directionalLight 
+          color="#bc6fec"
+          position={[-20, 20, 10]}
+          intensity={1.6}
+        />
         <Ball imgUrl={icon} />
       </Suspense>
 
