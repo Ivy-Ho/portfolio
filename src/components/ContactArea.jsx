@@ -174,7 +174,7 @@ const ContactArea = () => {
               <p className='lg:hidden'>Would you like to leave a message?</p>
               <p className='lg:hidden'>I'm excited to hear from you </p>
               <p className='lg:hidden flex'>and  can't wait for your feedback.
-                <motion.div 
+                <motion.span 
                   className='lg:inline-block lg:hidden'
                   animate={{
                     opacity: [1, 0 , 1]
@@ -185,8 +185,8 @@ const ContactArea = () => {
                     repeatType: 'loop'
                   }}>
                     <span className='ml-1 inline-block w-1 h-3 bg-violet-400'></span>
-                  </motion.div>
-            </p>
+                  </motion.span>
+              </p>
             </div>
           </div>
 
