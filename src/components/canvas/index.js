@@ -1,6 +1,6 @@
 import BallCanvas from "./Ball";
 import StarsCanvas from "./Stars";
-import AvatarCanvas from "./Avatar";
-import TechAvatarCanvas from "./TechAvatar";
+import ContactAvatarCanvas from "./ContactAvatar";
+import HeroAvatarCanvas from "./HeroAvatar";
 
-export { BallCanvas, StarsCanvas, AvatarCanvas, TechAvatarCanvas };
+export { BallCanvas, StarsCanvas, ContactAvatarCanvas, HeroAvatarCanvas };

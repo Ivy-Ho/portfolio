@@ -1,4 +1,4 @@
-import { BallCanvas, StarsCanvas, AvatarCanvas, TechAvatarCanvas } from './canvas';
+import { BallCanvas, StarsCanvas, ContactAvatarCanvas, HeroAvatarCanvas } from './canvas';
 import Hero from './Hero';
 import Navbar from './Navbar';
 import About from './About';
@@ -23,6 +23,6 @@ export {
   Footer,
   BallCanvas, 
   StarsCanvas,
-  TechAvatarCanvas,
-  AvatarCanvas
+  HeroAvatarCanvas,
+  ContactAvatarCanvas
 }
