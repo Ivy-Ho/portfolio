@@ -1,16 +1,16 @@
 
-import { About, ContactArea, Hero, Tech , Projects, SideProjects,  StarsCanvas} from '../components';
+import { About, ContactArea, Hero, Projects, SideProjects,  StarsCanvas} from '../components';
 
 const Home = () => {
 
   return (
     <div className="relative z-0 bg-primary">
-      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <div className="relative z-0 w-full h-screen mx-auto">
         <Hero />
+        <StarsCanvas />
       </div>
       <About />
 
-      {/* <Tech /> */}
       <Projects />
       <SideProjects />
       <div className="relative z-0">
