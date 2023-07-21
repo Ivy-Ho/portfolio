@@ -27,7 +27,7 @@ const ProjectDetail = () => {
 
 
   return (
-    <div className="mt-5">
+    <div className="pt-5">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>{data.name}</h2>
@@ -60,7 +60,7 @@ const ProjectDetail = () => {
         </div>
                
         {/* gallery */}
-        <div className="mt-10 flex flex-wrap lg:flex-nowrap justify-start gap-9">
+        <div className="hidden md:flex md:mt-10  md:flex-no-wrap md:justify-start md:gap-9">
 
           {
             data.gallery.map((img, i) =>(
@@ -76,7 +76,6 @@ const ProjectDetail = () => {
         </div>
 
       </motion.div>
-
     </div>
   )
   
