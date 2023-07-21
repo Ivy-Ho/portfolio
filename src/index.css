@@ -205,7 +205,6 @@
 }
 
 :root {
-  --header-height: 68px;
   --footer-height: 76px;
 }
 
@@ -215,10 +214,11 @@
     min-height: calc( 100svh - var(--footer-height));
   }
 }
-@media (max-width: 1024px) {
+
+/* @media (max-width: 1024px) {
   .pad-hero-height {
     height: 100svh;
     background: #000;
   }
-}
+} */
 

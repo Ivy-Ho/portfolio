@@ -5,7 +5,7 @@ const Home = () => {
 
   return (
     <div className="relative z-0 bg-primary">
-      <div className="relative z-0 w-full pad-hero-height lg:h-screen mx-auto">
+      <div className="relative z-0 w-full h-screen mx-auto">
         <Hero />
         <StarsCanvas />
       </div>
