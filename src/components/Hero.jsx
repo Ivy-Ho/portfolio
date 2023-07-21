@@ -24,7 +24,7 @@ const Hero = () => {
             A Frontend Developer
           </p>
           <p className={`text-[#dfd9ff] text-lg lg:leading-8`}>
-             currently seeking job opportunities <br className='sm:block hidden' />
+             I'm currently seeking job opportunities <br className='sm:block hidden' />
              in Taichung, Taiwan, or remote positions.
           </p>
 
@@ -62,7 +62,7 @@ const Hero = () => {
       </div>
 
       {/* scroll down button */}
-      <div className='absolute bottom-12 md:bottom-10 w-full flex justify-center items-center group z-20'>
+      <div className='absolute bottom-10 w-full flex justify-center items-center group z-20'>
         <a 
           href="#about"
           className='before:content-["click"] before:block lg:before:hidden before:text-white-100 lg:before:text-secondary before:font-medium before:mb-1 block px-3 py-3'
