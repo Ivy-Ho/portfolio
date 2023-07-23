@@ -9,6 +9,9 @@ import SideProjects from './SideProjects';
 import ContactArea from './ContactArea';
 import GoTop from './GoTop';
 import Footer from './Footer';
+import Button from './Button';
+
+
 
 export {
   Hero,
@@ -24,5 +27,6 @@ export {
   BallCanvas, 
   StarsCanvas,
   HeroAvatarCanvas,
-  ContactAvatarCanvas
+  ContactAvatarCanvas,
+  Button
 }

@@ -4,11 +4,11 @@ import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
+import Button from "../components/Button";
 
 const ProjectDetail = () => {
 
   const { id } = useParams();
-  console.log((parseInt(id)) > 10)
 
   let data = [];
 
@@ -54,9 +54,12 @@ const ProjectDetail = () => {
             ))}
           </div>
 
-          <a href={data.site_url} target="_blank" className="ml-auto font-medium px-5 py-2 rounded-3xl border-2 text-secondary border-secondary hover:text-white hover:border-white w-[120px] text-center block" rel="noreferrer">
-            view site
-          </a>
+          <Button
+            path={`${data.site_url}`}
+            target={"_blank" }
+            text={"view site"}
+          />
+          
         </div>
                
         {/* gallery */}
