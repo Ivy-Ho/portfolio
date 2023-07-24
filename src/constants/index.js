@@ -76,11 +76,11 @@ const socialLinks = [
     img: github,
     url: "https://github.com/Ivy-Ho",
   },
-  {
-    name: 'linkedin',
-    img: linkedin,
-    url: "",
-  },
+  // {
+  //   name: 'linkedin',
+  //   img: linkedin,
+  //   url: "",
+  // },
   {
     name: 'medium',
     img: medium,
