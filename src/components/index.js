@@ -10,8 +10,7 @@ import ContactArea from './ContactArea';
 import GoTop from './GoTop';
 import Footer from './Footer';
 import Button from './Button';
-
-
+import LoadingScreen from './LoadingScreen';
 
 export {
   Hero,
@@ -28,5 +27,6 @@ export {
   StarsCanvas,
   HeroAvatarCanvas,
   ContactAvatarCanvas,
-  Button
+  Button,
+  LoadingScreen
 }
