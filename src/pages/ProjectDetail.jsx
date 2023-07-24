@@ -24,8 +24,6 @@ const ProjectDetail = () => {
     });
   }
 
-
-
   return (
     <div className="pt-5">
       <motion.div variants={textVariant()}>
@@ -39,9 +37,16 @@ const ProjectDetail = () => {
           />
 
         <div className="max-w-5xl mb-20">
-          <p className="mt-5 max-w-2xl leading-7 text-secondary tracking-wide">
-            { data.description }
-          </p>
+          <ul className="mt-5 list-none space-y-2">
+            {data.description.map((point, index) => (
+              <li
+                key={`project-point-${index}`}
+                className="text-secondary text-[16px] pl-1 tracking-wider flex gap-2 items-center before:w-3 before:h-1 before:bg-violet-500 before:rounded-lg"
+              >
+                {point}
+              </li>
+            ))}
+          </ul>
           
           <div className='mt-4 flex flex-wrap gap-2'>
             {data.tags.map((tag) => (

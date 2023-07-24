@@ -162,9 +162,9 @@ const experiences = [
     date: "November 2020 - March 2023",
     points: [
       "擔任「經濟日報」助理前端工程師。",
-      "主要負責經濟日報平台頁面切版、功能製作、api 資料串接，並協助後端 php 套版，後續也負責此平台的維護與更新。",
+      "歷經平台翻新改版，改為會員訂閱制，負責經濟日報平台頁面切版、功能製作、api 資料串接，後續也負責此平台的維護與更新。",
       "另負責新聞專題頁、活動頁製作。",
-      "兩年間對純 CSS 與 JavaScript 有了更深入的掌握與了解。"
+      "兩年間對 CSS、JavaScript 與 Webpack 有了更深入的掌握與了解。"
     ],
   },
   {
@@ -210,8 +210,14 @@ const projectData = [
   {
     id:'1',
     name: "經濟日報",
-    description:
-      "歷經平台翻新改版，改為會員訂閱制，負責經濟日報平台頁面切版、功能製作(首頁、VIP頁、各類別頁、文章頁、產業資料庫) / 協助後端 php 套版、串接 api / 後續維護網站至 2023 年 2 月",
+    description: [
+      "html",
+      "scss 切版",
+      "JavaScript 功能製作",
+      "Swiper 輪播套件",
+      "API 串接",
+      "後續維護網站至 2023 年 2 月"
+    ],
     tags: [
       {
         name: "javascript",
@@ -234,8 +240,15 @@ const projectData = [
   {
     id:'2',
     name: "電力專題",
-    description:
-      "html, scss 切版 / aos 套件 / 文章內容 API 串接 / fb, line 分享文章功能串接 / webpack 打包",
+    description: [
+      "html",
+      "scss 切版",
+      "aos 套件",
+      "文章內容 API 串接",
+      "fb, line 分享文章功能串接",
+      "webpack 打包"
+    ],
+    
     tags: [
       {
         name: "javascript",
@@ -258,8 +271,15 @@ const projectData = [
   {
     id:'3',
     name: "伺服器專題",
-    description:
-      "html, scss 切版 / aos 套件 / 圖片及影片 lazy load / 文章內容 API 串接 / fb, line 分享文章功能串接 / webpack 打包",
+    description: [
+      "html",
+      "scss 切版",
+      "aos 套件",
+      "圖片及影片 lazy load",
+      "文章內容 API 串接",
+      "fb, line 分享文章功能串接",
+      "webpack 打包"
+    ],
     tags: [
       {
         name: "javascript",
@@ -282,8 +302,16 @@ const projectData = [
   {
     id:'4',
     name: "數位訂閱周年慶",
-    description:
-      "html, scss 切版 / 播放器樣式手刻製作 / scratchcard-js 刮刮卡套件 / swiper 輪播套件 / 會員登入判斷 / 抽獎 API 串接 / webpack 打包",
+    description: [
+      "html",
+      "scss 切版",
+      "播放器樣式手刻製作",
+      "scratchcard-js 刮刮卡套件",
+      "swiper 輪播套件",
+      "會員登入判斷",
+      "抽獎 API 串接",
+      "webpack 打包",
+    ],
     tags: [
       {
         name: "javascript",
@@ -306,8 +334,13 @@ const projectData = [
   {
     id:'5',
     name: "經濟日報 x 今周刊活動",
-    description:
-      "html, scss 切版 / webpack 打包 / slick-carousel 輪播套件 / JavaScript 選單開闔製作",
+    description: [
+      "html",
+      "scss 切版",
+      "webpack 打包",
+      "slick-carousel 輪播套件",
+      "JavaScript 選單開闔製作",
+    ],
     tags: [
       {
         name: "javascript",
@@ -330,8 +363,14 @@ const projectData = [
   {
     id:'6',
     name: "新春會員活動",
-    description:
-      "html, scss 切版 / slick-carousel 輪播套件 / 會員登入判斷 / 抽獎 API 串接 / gulp 打包",
+    description: [
+      "html",
+      "scss 切版",
+      "slick-carousel 輪播套件",
+      "會員登入判斷",
+      "抽獎 API 串接",
+      "gulp 打包"
+    ],
     tags: [
       {
         name: "javascript",
@@ -357,8 +396,14 @@ const sideProjectData = [
   {
     id:'11',
     name: "3D Portfolio",
-    description:
-      "HTML, Tailwind CSS 切版 / framer-motion 文字進場動畫 / react router 路由規劃 / react-three-fiber 3D 模型載入",
+    description: [
+      "jsx 架構",
+      "Tailwind CSS 切版",
+      "framer-motion 文字進場動畫",
+      "react router 路由規劃",
+      "react-three-fiber 3D 模型載入",
+      "Mixamo 動畫"
+    ],
     tags: [
       {
         name: "react",
@@ -375,14 +420,17 @@ const sideProjectData = [
     ],
     image: portfolio,
     gallery:[],
-    site_url: "",
-    source_code_link: "https://github.com/",
+    site_url: "https://ivy-ho.github.io/portfolio/",
+    source_code_link: "https://github.com/Ivy-Ho/portfolio",
   },
   {
     id:'12',
     name: "Sunny's Dance Club",
-    description:
-      "先勾選右上角控制器的 bgm 選項，開啟背景音樂 / 再透過第一項動畫下拉選單，選擇不同舞風，欣賞 Sunny 為您帶來不同的表演",
+    description: [
+      "jsx 架構",
+      "react-three-fiber 3D 模型載入",
+      "Mixamo 動畫"
+    ],
     tags: [
       {
         name: "react",
