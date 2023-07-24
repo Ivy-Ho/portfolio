@@ -12,7 +12,7 @@ const About = () => {
 
   return (
     <div className='w-full lg:h-[calc(100vh-120px)] flex flex-col gap-5 '>
-      <div className='flex-1'>
+      <div>
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Introduction</p>
           <h2 className={styles.sectionHeadText}>
@@ -36,7 +36,7 @@ const About = () => {
         </motion.div>
       </div>
 
-      <div className='flex-1'>
+      <div>
         <Tech />
       </div>
     </div>
