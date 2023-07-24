@@ -13,7 +13,7 @@ const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (
-    <mesh castShadow receiveShadow scale={2.75}>
+    <mesh castShadow receiveShadow scale={3}>
       <icosahedronGeometry args={[1, 1]} />
       <meshStandardMaterial
         color='#fff8eb'
@@ -40,8 +40,14 @@ const BallCanvas = ({ icon }) => {
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        {/* <OrbitControls enableZoom={false} /> */}
-        <ambientLight intensity={0.2} />
+        {/* <OrbitControls 
+          autoRotate
+          enableZoom={false}
+          enableRotate={false}
+        /> */}
+        <ambientLight
+          intensity={0.2}
+        />
         <directionalLight 
           color="#bc6fec"
           position={[-20, 20, 10]}
