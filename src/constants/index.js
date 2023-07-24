@@ -176,7 +176,7 @@ const experiences = [
     points: [
       "2019 年 9 月開始自學網頁前端程式語言。",
       "於 2019 年 12 月爭取第一個接案機會，製作出響應式網頁。",
-      "後續以 Vue.js + Bootstrap 為主要開發框架，製作出面試作品。"
+      "後續學習 Vue.js + Bootstrap 作為主要開發框架，製作出面試作品。"
     ],
   },
   {
@@ -429,7 +429,9 @@ const sideProjectData = [
     description: [
       "jsx 架構",
       "react-three-fiber 3D 模型載入",
-      "Mixamo 動畫"
+      "Mixamo 動畫",
+      "請使用桌機、筆電開啟",
+      "平板、手機版仍在優化中"
     ],
     tags: [
       {
