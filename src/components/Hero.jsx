@@ -9,7 +9,7 @@ const Hero = () => {
     <section className='relative '>
 
       {/* text content  */}
-      <div className={`${styles.paddingX} absolute inset-0 top-[80px] lg:top-[120px] max-w-7xl mx-auto max-h-auto flex flex-row items-start gap-5 z-10 lg:z-0`}>
+      <div className={`${styles.paddingX} absolute inset-0 top-0 pt-[80px] lg:pt-[120px] max-w-7xl mx-auto max-h-auto flex flex-row items-start gap-5 z-10 lg:z-0`}>
 
         {/* deco */}
         <div className='flex flex-col justify-center items-center mt-5'>
