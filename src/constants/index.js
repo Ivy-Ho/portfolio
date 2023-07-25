@@ -2,6 +2,7 @@ import {
   github,
   medium,
   linkedin,
+  resume,
   javascript,
   typescript,
   html,
@@ -81,6 +82,11 @@ const socialLinks = [
   //   img: linkedin,
   //   url: "",
   // },
+  {
+    name: 'resume',
+    img: resume,
+    url: "",
+  },
   {
     name: 'medium',
     img: medium,
@@ -402,7 +408,8 @@ const sideProjectData = [
       "framer-motion 文字進場動畫",
       "react router 路由規劃",
       "react-three-fiber 3D 模型載入",
-      "Mixamo 動畫"
+      "Mixamo 動畫",
+      "平板、手機版持續優化中"
     ],
     tags: [
       {

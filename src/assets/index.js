@@ -1,6 +1,7 @@
 import github from "./github.png";
 import medium from "./medium.png";
 import linkedin from "./linkedin.png";
+import resume from "./resume.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -66,6 +67,7 @@ export {
   github,
   medium,
   linkedin,
+  resume,
   menu,
   close,
   css,

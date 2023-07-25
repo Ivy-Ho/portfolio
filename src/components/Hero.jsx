@@ -47,7 +47,7 @@ const Hero = () => {
                   <img
                     src={link.img}
                     alt={link.name}
-                    className='w-1/2 h-1/2 object-contain lg:hover:opacity-70'
+                    className='w-2/3 h-2/3 object-contain lg:hover:opacity-70'
                   />
                 </div>
               </Link>
