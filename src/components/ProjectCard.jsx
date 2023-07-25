@@ -15,6 +15,7 @@ const ProjectCard = ({ index, id, name, description, tags, image, source_code_li
         <Link to={`/portfolio/project/${id}`}>
           <div className='relative w-full h-[230px]'>
             <img
+              loading="lazy"
               src={image}
               alt='project_image'
               className='w-full h-full object-cover rounded-2xl lg:grayscale lg:group-hover:grayscale-0 transition duration-500 ease-in-out'
