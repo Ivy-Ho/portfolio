@@ -165,7 +165,7 @@ const experiences = [
     company_name: "聯合線上股份有限公司",
     icon: udn,
     iconBg: "#383E56",
-    date: "November 2020 - March 2023",
+    date: "November 2020 - February 2023",
     points: [
       "擔任「經濟日報」助理前端工程師。",
       "歷經平台翻新改版，改為會員訂閱制，負責經濟日報平台頁面切版、功能製作、api 資料串接，後續也負責此平台的維護與更新。",
