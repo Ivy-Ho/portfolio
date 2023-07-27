@@ -4,16 +4,19 @@ import { useEffect } from "react";
 const LoadingScreen = (props) => {
   const {started, setStarted} = props;
 
-  const {progress, total, loaded, item} = useProgress();
+  const {progress} = useProgress();
 
   useEffect(() => {
     if(progress === 100) {
       setTimeout(() =>{
+        document.body.style.overflow = "auto";
         setStarted(true)
       }, 500)
+    }else {
+      document.body.style.overflow = "hidden";
     }
 
-  }, [progress, total, loaded, item, setStarted])
+  }, [progress, setStarted])
 
   return (
     <div
