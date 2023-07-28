@@ -11,7 +11,7 @@
 
 ## About The Project
 
-Hi, I'm Ivy Ho, a frontend developer.  
+Hi, I'm Ivy Ho, a front-end developer.  
 This is my 2023 portfolio, please feel free to check it out, and drop me a message at contact area if you'd like to.  
 I'm excited to hear from you and can't wait for your feedback!
 
