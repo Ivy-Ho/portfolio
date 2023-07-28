@@ -131,10 +131,6 @@ const technologies = [
     name: "Three JS",
     icon: threejs,
   },
-  {
-    name: "git",
-    icon: git,
-  },
   // {
   //   name: "figma",
   //   icon: figma,
@@ -146,6 +142,10 @@ const technologies = [
   {
     name: "vite",
     icon: vite,
+  },
+  {
+    name: "git",
+    icon: git,
   },
 ];
 
@@ -168,7 +168,7 @@ const experiences = [
     date: "November 2020 - February 2023",
     points: [
       "擔任「經濟日報」助理前端工程師。",
-      "歷經平台翻新改版，改為會員訂閱制，負責經濟日報平台頁面切版、功能製作、api 資料串接，後續也負責此平台的維護與更新。",
+      "歷經平台翻新改版，改為會員訂閱制，負責經濟日報平台頁面切版、功能製作、api 資料串接，上線後的維護與更新。",
       "另負責新聞專題頁、活動頁製作。",
       "兩年間對 CSS、JavaScript 與 Webpack 有了更深入的掌握與了解。"
     ],
@@ -192,7 +192,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "March 2018 - March 2019",
     points: [
-      "於行銷部負責參展相關聯繫事宜，也負責整理、更新公司產品規格表，進而熟悉產品製程及特性。",
+      "於行銷部負責參展相關事宜聯繫，也負責整理、更新公司產品規格表，進而熟悉產品製程及特性。",
       "於同年 7 月至業務部支援一個月，熟悉業務工作內容，主動學習的精神備受肯定。",
       "於下一個月正式加入業務部擔任業務專員，最初負責外銷客戶聯繫，熟悉後漸漸接下內銷零件廠及組車廠客戶。",
     ],
