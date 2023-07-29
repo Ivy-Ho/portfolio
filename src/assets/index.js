@@ -6,7 +6,6 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -61,6 +60,13 @@ import sunny from "./work/sunny.png";
 import sunny_1 from "./work/sunny_1.png";
 import sunny_2 from "./work/sunny_2.png";
 import sunny_3 from "./work/sunny_3.png";
+import foreach from "./work/foreach.png";
+import foreach_product_pc from "./work/foreach_product_pc.png";
+import foreach_product_mb from "./work/foreach_product_mb.png";
+import foreach_products_pc from "./work/foreach_products_pc.png";
+import foreach_products_mb from "./work/foreach_products_mb.png";
+import foreach_checkout_pc from "./work/foreach_checkout_pc.png";
+import foreach_checkout_mb from "./work/foreach_checkout_mb.png";
 
 
 export {
@@ -71,7 +77,6 @@ export {
   menu,
   close,
   css,
-  figma,
   git,
   html,
   javascript,
@@ -119,6 +124,13 @@ export {
   sunny_1,
   sunny_2,
   sunny_3,
+  foreach,
+  foreach_product_pc,
+  foreach_product_mb,
+  foreach_products_pc,
+  foreach_products_mb,
+  foreach_checkout_pc,
+  foreach_checkout_mb,
   webpack,
   vite,
 };

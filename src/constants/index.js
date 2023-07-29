@@ -12,7 +12,6 @@ import {
   tailwind,
   nodejs,
   git,
-  figma,
   udn,
   code,
   transart,
@@ -51,6 +50,13 @@ import {
   sunny_2,
   sunny_3,
   portfolio,
+  foreach,
+  foreach_product_pc,
+  foreach_product_mb,
+  foreach_products_pc,
+  foreach_products_mb,
+  foreach_checkout_pc,
+  foreach_checkout_mb,
   threejs,
   webpack,
   vite
@@ -85,7 +91,7 @@ const socialLinks = [
   {
     name: 'resume',
     img: resume,
-    url: "",
+    url: "https://www.cakeresume.com/s--QNJEhx9togzSwOlcoMNCNQ--/ivycodefive",
   },
   {
     name: 'medium',
@@ -131,10 +137,6 @@ const technologies = [
     name: "Three JS",
     icon: threejs,
   },
-  // {
-  //   name: "figma",
-  //   icon: figma,
-  // },
   // {
   //   name: "webpack",
   //   icon: webpack,
@@ -458,6 +460,38 @@ const sideProjectData = [
     gallery:[sunny_1, sunny_2, sunny_3,],
     site_url: "https://ivy-ho.github.io/Sunny-Dance-Club/",
     source_code_link: "https://github.com/Ivy-Ho/Sunny-Dance-Club",
+  },
+  {
+    id:'13',
+    name: "迴圈 ∞ 選框 (電商網站)",
+    description: [
+      "html",
+      "Bootstrap 4 切版",
+      "Vue router 路由建構",
+      "Vue Cli 專案開發",
+      "ESLint 程式碼品質控管",
+      "Vee Validate 表單驗證",
+      "API 串接",
+      "品牌、⽂案內容發想"
+    ],
+    tags: [
+      {
+        name: "vue",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "bootstrap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vue-cli",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: foreach,
+    gallery:[ foreach_products_pc, foreach_products_mb, foreach_product_pc, foreach_product_mb, foreach_checkout_pc, foreach_checkout_mb,],
+    site_url: "https://ivy-ho.github.io/forEach-Frame-Shop/#/",
+    source_code_link: "https://github.com/Ivy-Ho/forEach-Frame-Shop",
   },
 ]
 export { socialLinks, technologies, experiences, projectData, sideProjectData };
