@@ -9,7 +9,7 @@ import { Suspense, useContext, useEffect, useRef, useState } from 'react';
 import { Float, useAnimations, useFBX, useGLTF } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import CanvasLoader from '../Loader';
-import { ScreenContext } from '../../contexts/screenContext';
+import { ScreenContext } from '../../contexts/ScreenContext';
 
 const ContactAvatar = (props) => {
 

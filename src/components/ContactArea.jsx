@@ -6,7 +6,7 @@ import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 import ContactAvatarCanvas from './canvas/ContactAvatar';
 import { useLocation } from 'react-router-dom'
-import { ScreenContext } from '../contexts/screenContext'
+import { ScreenContext } from '../contexts/ScreenContext'
 
 const ContactArea = () => {
 

@@ -9,7 +9,7 @@ import { useAnimations, useFBX, useGLTF } from '@react-three/drei'
 import { Canvas, useFrame } from '@react-three/fiber'
 import CanvasLoader from '../Loader';
 import * as THREE from "three"
-import { ScreenContext } from '../../contexts/screenContext';
+import { ScreenContext } from '../../contexts/ScreenContext';
 
 const HeroAvatar = (props) => {
 

@@ -6,7 +6,7 @@ import { textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 import Button from "../components/Button";
 import { useContext } from "react";
-import { ScreenContext } from "../contexts/screenContext";
+import { ScreenContext } from "../contexts/ScreenContext";
 
 const ProjectDetail = () => {
 
