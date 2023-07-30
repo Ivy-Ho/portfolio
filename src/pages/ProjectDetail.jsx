@@ -5,10 +5,14 @@ import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 import Button from "../components/Button";
+import { useContext } from "react";
+import { ScreenContext } from "../contexts/screenContext";
 
 const ProjectDetail = () => {
 
   const { id } = useParams();
+
+  const { isMobile } = useContext(ScreenContext);
 
   let data = [];
 
@@ -68,20 +72,24 @@ const ProjectDetail = () => {
         </div>
                
         {/* gallery */}
-        <div className="hidden md:flex md:mt-10  md:flex-no-wrap md:justify-start md:gap-9">
+        {
+          (!isMobile) && (
+            <div className="flex md:mt-10  md:flex-no-wrap md:justify-start md:gap-9">
 
-          {
-            data.gallery.map((img, i) =>(
-              <div key={i} className="">
-                <img 
-                  src={img}
-                  alt="work image"
-                  className="rounded-md"
-                />
-              </div>
-            ))
-          }
-        </div>
+              {
+                data.gallery.map((img, i) =>(
+                  <div key={i} className="">
+                    <img 
+                      src={img}
+                      alt="work image"
+                      className="rounded-md"
+                    />
+                  </div>
+                ))
+              }
+            </div>
+          )
+        }
 
       </motion.div>
     </div>

@@ -5,11 +5,11 @@ Command: npx gltfjsx@6.2.4 public/models/64ae7cdfdbec0e3029da2609.glb.glb
 
 // ContactAvatar
 
-import { Suspense, useEffect, useRef, useState } from 'react';
+import { Suspense, useContext, useEffect, useRef, useState } from 'react';
 import { Float, useAnimations, useFBX, useGLTF } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import CanvasLoader from '../Loader';
-
+import { ScreenContext } from '../../contexts/screenContext';
 
 const ContactAvatar = (props) => {
 
@@ -47,24 +47,7 @@ const ContactAvatar = (props) => {
 
 const ContactAvatarCanvas = () => {
 
-  const [isMobile, setIsMobile ] = useState(false);
-
-   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 1024px)');
-
-    setIsMobile(mediaQuery.matches);
-
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    }
-
-
-    mediaQuery.addEventListener('change', handleMediaQueryChange)
-
-    return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
-    }
-  }, [])
+const { isPc } = useContext(ScreenContext);
 
   return (
     <Canvas
@@ -84,8 +67,8 @@ const ContactAvatarCanvas = () => {
            floatIntensity={2} 
         >
           <ContactAvatar
-            scale={isMobile ? 2  :2.2}
-            position-y={isMobile ? -2.5  : -2.8}
+            scale={isPc ? 2.2 : 2}
+            position-y={isPc ? -2.8  : -2.5}
           />
         </Float>
         <spotLight 

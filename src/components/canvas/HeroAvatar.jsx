@@ -4,12 +4,12 @@ Command: npx gltfjsx@6.2.7 public/models/64ae7cdfdbec0e3029da2609copy.glb
 */
 // HeroAvatar
 
-import { Suspense, useEffect, useState, useRef } from 'react';
-import { OrbitControls, useAnimations, useFBX, useGLTF } from '@react-three/drei'
+import { Suspense, useEffect, useRef, useContext } from 'react';
+import { useAnimations, useFBX, useGLTF } from '@react-three/drei'
 import { Canvas, useFrame } from '@react-three/fiber'
 import CanvasLoader from '../Loader';
 import * as THREE from "three"
-
+import { ScreenContext } from '../../contexts/screenContext';
 
 const HeroAvatar = (props) => {
 
@@ -27,9 +27,18 @@ const HeroAvatar = (props) => {
     actions["Standing"].reset().play();
   })
 
+  const { isMobile, isPc } = useContext(ScreenContext);
+
   useFrame((state) => {
-    const target = new THREE.Vector3(state.mouse.x, state.mouse.y, 1);
-    group.current.getObjectByName("Head").lookAt(target)
+    let target = {};
+    if(isMobile) {
+      target = new THREE.Vector3(0, -0.2, 0.2);
+    }else if (isPc) {
+      target = new THREE.Vector3(state.mouse.x, state.mouse.y, 1);
+    }else {
+      target = new THREE.Vector3(0, 0.4, 0.2);
+    }
+    group.current.getObjectByName('Head').lookAt(target);
   })
 
   return (
@@ -51,24 +60,17 @@ const HeroAvatar = (props) => {
 
 const HeroAvatarCanvas = () => {
 
-const [isMobile, setIsMobile ] = useState(false);
+  const { isMobile, isPc } = useContext(ScreenContext);
 
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 768px)');
+  let scaleNum = 0;
 
-    setIsMobile(mediaQuery.matches);
-
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    }
-
-
-    mediaQuery.addEventListener('change', handleMediaQueryChange)
-
-    return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
-    }
-  }, [])
+  if (isMobile) {
+    scaleNum = 5.6;
+  }else if(isPc) {
+    scaleNum = 6.8;
+  }else {
+    scaleNum = 6.6;
+  }
 
   return (
     <Canvas
@@ -80,15 +82,10 @@ const [isMobile, setIsMobile ] = useState(false);
         fov: `${isMobile ? 70 : 60}`,
       }}
     >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          enableRotate={false}
-        />  
+      <Suspense fallback={<CanvasLoader />}> 
         <HeroAvatar
           position-y={isMobile ? -9 : -9.9}
-          scale= {isMobile ? 5.6 : 6.8}
-          isMobile={isMobile}
+          scale= {scaleNum}
         />
         <spotLight 
           color="#d17756"

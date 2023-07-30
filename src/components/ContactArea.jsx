@@ -1,14 +1,26 @@
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect, useContext } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
-
 import { styles } from '../styles'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 import ContactAvatarCanvas from './canvas/ContactAvatar';
+import { useLocation } from 'react-router-dom'
+import { ScreenContext } from '../contexts/screenContext'
 
 const ContactArea = () => {
-  
+
+  let location = useLocation();
+  const inputRef = useRef(null)
+
+  const { isPc } = useContext(ScreenContext);
+
+  useEffect(()=>{
+    if(location.pathname === '/portfolio/contact' && isPc) {
+        inputRef.current.focus()
+    }
+  }, [location.pathname, isPc])
+
   const fromRef = useRef();
   
   const [form, setForm ] = useState({
@@ -100,6 +112,7 @@ const ContactArea = () => {
               Your Name
             </span>
             <input 
+              ref={inputRef}
               type='name'
               name='name'
               value={form.name}
