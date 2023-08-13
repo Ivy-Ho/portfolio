@@ -11,6 +11,7 @@ import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
+import vue from "./tech/vue.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
@@ -82,6 +83,7 @@ export {
   javascript,
   nodejs,
   reactjs,
+  vue,
   redux,
   tailwind,
   typescript,

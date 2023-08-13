@@ -8,6 +8,7 @@ import {
   html,
   css,
   reactjs,
+  vue,
   redux,
   tailwind,
   nodejs,
@@ -114,29 +115,29 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Vue",
+    icon: vue,
   },
-  // {
-  //   name: "TypeScript",
-  //   icon: typescript,
-  // },
   {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Tailwind CSS",
+    icon: tailwind,
   },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   // {
   //   name: "Node JS",
   //   icon: nodejs,
   // },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
   // {
   //   name: "webpack",
   //   icon: webpack,
@@ -144,6 +145,10 @@ const technologies = [
   {
     name: "vite",
     icon: vite,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
   },
   {
     name: "git",
