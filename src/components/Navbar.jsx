@@ -34,10 +34,11 @@ const Navbar = () => {
           onClick={()=> {
             window.scrollTo(0, 0)
           }}
-          className='text-white text-[18px] font-bold cursor-pointer flex lg:hover:text-violet-500'
+          className='text-white text-[18px] font-bold cursor-pointer flex items-center lg:hover:text-violet-500'
         >
           <span className='text-violet-500'>&lt;&thinsp;</span>
-          ivycodefive
+          <span className='text-[20px]'>ivycodefive</span>
+          
           <span className='text-violet-500'>&thinsp;&frasl;&gt;</span>
         </Link>
 

@@ -5,7 +5,7 @@ Command: npx gltfjsx@6.2.4 public/models/64ae7cdfdbec0e3029da2609.glb.glb
 
 // ContactAvatar
 
-import { Suspense, useContext, useEffect, useRef, useState } from 'react';
+import { Suspense, useContext, useEffect, useRef } from 'react';
 import { Float, useAnimations, useFBX, useGLTF } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import CanvasLoader from '../Loader';
@@ -25,8 +25,10 @@ const ContactAvatar = (props) => {
 
 
   useEffect(() => {
+    if (actions["Floating"]) {
     actions["Floating"].reset().play();
-  })
+    }
+  }, [actions["Floating"]]); 
 
   return (
     <group {...props} ref={group} dispose={null}>

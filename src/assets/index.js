@@ -24,6 +24,7 @@ import udn from "./company/udn.png";
 import code from "./company/code.png";
 import transart from "./company/transart.png";
 import maison from "./company/maison.jpg";
+import ezplus from "./company/ezplus.jpg";
 
 // work
 import money from "./work/money.png";
@@ -69,7 +70,6 @@ import foreach_products_mb from "./work/foreach_products_mb.png";
 import foreach_checkout_pc from "./work/foreach_checkout_pc.png";
 import foreach_checkout_mb from "./work/foreach_checkout_mb.png";
 
-
 export {
   github,
   medium,
@@ -92,6 +92,7 @@ export {
   code,
   transart,
   maison,
+  ezplus,
   money,
   money_pc,
   money_mb,
