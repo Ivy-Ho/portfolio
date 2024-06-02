@@ -61,7 +61,7 @@ const Experience = () => {
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] mb-10 lg:mb-24 flex flex-col'
       >
         <ul  className='tracking-wide text-[18px]'>
-          <li >擁有近 <span className="text-violet-500">3</span> 年的網頁開發經驗。</li>
+          <li >擁有 <span className="text-violet-500">3</span> 年的網頁前端開發經驗。</li>
           <li>擅長使用 Vue.js, React.js, Tailwind CSS 等技術，製作出響應式網站、後台管理系統。</li>
         </ul>
       </motion.div>

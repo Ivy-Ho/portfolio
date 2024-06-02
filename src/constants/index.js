@@ -85,15 +85,15 @@ const socialLinks = [
     img: github,
     url: "https://github.com/Ivy-Ho",
   },
-  // {
-  //   name: 'linkedin',
-  //   img: linkedin,
-  //   url: "",
-  // },
   {
     name: "resume",
     img: resume,
-    url: "https://www.cakeresume.com/s--QNJEhx9togzSwOlcoMNCNQ--/ivycodefive",
+    url: "https://www.cakeresume.com/s--pj-mzNwCitUR4EoOVT_FjQ--/ivycodefive",
+  },
+  {
+    name: "linkedin",
+    img: linkedin,
+    url: "https://www.linkedin.com/in/yingting-ho-a193b11b7/",
   },
   {
     name: "medium",
@@ -159,13 +159,13 @@ const experiences = [
     company_name: "億集創見應用科技",
     icon: ezplus,
     iconBg: "#383E56",
-    date: "September 2023 - Now",
+    date: "September 2023 - May 2024",
     points: [
       "使用 Vue3, Pinia, Tailwind CSS, SCSS, Vite等技術開發專案。",
       "與 PM 討論系統使用流程。",
       "與後端工程師討論 API 功能，進行測試、串接。",
       "依照 figma 設計稿切版、使用 Element-Plus UI 元件庫、因應裝置做響應式調整。",
-      "製作權限功能、廠商管理系統、建築能效評估系統。",
+      "製作權限管理系統、權限查詢系統、廠商管理系統、建築能效評估系統。",
       "使用 ESLint、Prettier 維護程式碼品質。",
     ],
   },
